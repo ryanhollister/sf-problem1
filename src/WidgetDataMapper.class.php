@@ -1,6 +1,6 @@
 <?php
 /**
- * Storage Facility Data Mapper
+ * Widget Data Mapper
  * 
  * @author Patrick Mizer
  */

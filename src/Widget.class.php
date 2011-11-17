@@ -1,6 +1,6 @@
 <?php
 /**
- * Storage Facility Entity
+ * Widget Entity
  * 
  * @author Patrick Mizer
  */
