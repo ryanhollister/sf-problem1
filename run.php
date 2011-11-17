@@ -11,6 +11,12 @@ $itr = new EntityIterator(
         $dao->queryWidgets(), 
         new WidgetDataMapper());
 
+/* Prints this time */
+foreach($itr as $widget) {
+    print_r($widget);
+}
+
+/* Doesn't print this time */
 foreach($itr as $widget) {
     print_r($widget);
 }
