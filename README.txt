@@ -39,5 +39,6 @@ A few constraints and notes
 * Do not alter any other files in the src directory
 * There are quite a few corner cases to consider
 * There is a PHPUnit test file in the tests directory - add additional tests if it's helpful to you.
+* Be conscious of time & space complexity
 
 Good luck
