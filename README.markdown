@@ -29,7 +29,7 @@ Like the Statement the ResultSet can not be rewound.
 
 A few constraints:
 
--- You may not alter any file other that the RewindableEntityIterator class in any way
--- You must account for the case where the iterator is rewound before all elements have been iterated over
+* You may not alter any file other that the RewindableEntityIterator class in any way
+* You must account for the case where the iterator is rewound before all elements have been iterated over
 
 Good luck
