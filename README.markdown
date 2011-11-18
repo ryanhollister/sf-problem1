@@ -1,10 +1,12 @@
-Implement a Rewindable Entity Iterator
-======================================
+The Rewindable Entity Iterator
+==============================
 
 Our EntityIterators are composed of a standard PDO PreparedStatement and a 
 DataMapper.  The DataMapper maps rows into objects in real time as we iterate 
 over the the Statement.  There is a limitation with PDO Statements in that you
-can only iterate over them one time.  For example:
+can only iterate over them one time.  
+
+For example:
 
     // first loop works fine
     foreach($statement as $result) {
@@ -16,18 +18,22 @@ can only iterate over them one time.  For example:
         // never called 
     }
 
-Since our EntityIterators operate by iterating over the statement they 
-are also unable to rewind and can only be looped over once.  This is clearly 
-undesirable.
+Since our EntityIterator operates by iterating over the statement it 
+can also only be looped over once.  This causes all sorts of problems.
 
-I would like for you to derive a RewindableEntityIterator from the 
-EntityIterator class.  Your new iterator should implement the rewind method
-such that it can be iterated over more than once.  In the example code I have 
-replaced the PDO Statement with a ResultSet object that does not rewind.
+Your Job
+--------
 
-A few constraints:
+Derive a RewindableEntityIterator from the EntityIterator class.  Your new 
+iterator should be rewindable and thus able to iterate through indefinitely.  You 
+must accomplish using the underlying ResultSet data structure which is unable to rewind. 
 
-* You may not alter any file other that the RewindableEntityIterator class in any way
-* You must account for the case where the iterator is rewound before all elements have been iterated over
+A few constraints and notes
+---------------------------
+
+* Implement the RewindableEntityIterator class is the src directory
+* Do not alter any other files in the src directory
+* There are quite a few corner cases to consider
+* There is a PHPUnit test file in the tests directory - add additional tests if it's helpful to you.
 
 Good luck
