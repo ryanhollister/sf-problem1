@@ -22,10 +22,8 @@ undesirable.
 
 I would like for you to derive a RewindableEntityIterator from the 
 EntityIterator class.  Your new iterator should implement the rewind method
-such that it can be iterated over more than once.
-
-In the example code I have replaced the PDO Statement with a ResultSet object.  
-Like the Statement the ResultSet can not be rewound.  
+such that it can be iterated over more than once.  In the example code I have 
+replaced the PDO Statement with a ResultSet object that does not rewind.
 
 A few constraints:
 
