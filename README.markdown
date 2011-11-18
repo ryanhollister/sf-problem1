@@ -26,7 +26,11 @@ Your Job
 
 Derive a RewindableEntityIterator from the EntityIterator class.  Your new 
 iterator should be rewindable and thus able to iterate through indefinitely.  You 
-must accomplish using the underlying ResultSet data structure which is unable to rewind. 
+must accomplish using the underlying data structure which is unable to rewind. 
+
+To simplify the task we have used a ResultSet object instead of a PDO Statement.  The 
+EntityIterator iterates over the ResultSet object directly.  Like the PDO Statemen, 
+the ResultSet does not have the ability to rewind.
 
 A few constraints and notes
 ---------------------------
