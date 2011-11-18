@@ -94,4 +94,13 @@ class EntityIterator implements \Iterator
     public function valid() {
     	return $this->next != false;
     }
+    
+    /**
+     * Get current result
+     * 
+     * @return type 
+     */
+    public function currentResult() {
+        return $this->current();
+    }
 }
