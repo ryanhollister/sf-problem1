@@ -13,22 +13,22 @@ class EntityIterator implements \Iterator
     /**
      * @var ResultSet
      */
-    private $rs;
+    protected $rs;
 
     /**
      * @var Object
      */
-    private $next;
+    protected $next;
 
     /**
      * @var DataMapper
      */
-    private $dataMapper;
+    protected $dataMapper;
     
     /**
      * @var int
      */
-    private $index;
+    protected $index;
 
     /**
      * Constructor
