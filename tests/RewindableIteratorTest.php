@@ -11,7 +11,7 @@ class RewindableIteratorTest extends \PHPUnit_Framework_TestCase
         
         $dao = new Dao();
 
-        $itr = new EntityIterator(
+        $itr = new RewindableEntityIterator(
                 $dao->queryWidgets(), 
                 new WidgetDataMapper());
         
@@ -28,7 +28,7 @@ class RewindableIteratorTest extends \PHPUnit_Framework_TestCase
         
         $dao = new Dao();
 
-        $itr = new EntityIterator(
+        $itr = new RewindableEntityIterator(
                 $dao->queryWidgets(), 
                 new WidgetDataMapper());
         
@@ -47,7 +47,7 @@ class RewindableIteratorTest extends \PHPUnit_Framework_TestCase
         
         $dao = new Dao();
 
-        $itr = new EntityIterator(
+        $itr = new RewindableEntityIterator(
                 $dao->queryWidgets(), 
                 new WidgetDataMapper());
         
@@ -73,7 +73,7 @@ class RewindableIteratorTest extends \PHPUnit_Framework_TestCase
         
         $dao = new Dao();
 
-        $itr = new EntityIterator(
+        $itr = new RewindableEntityIterator(
                 $dao->queryWidgets(), 
                 new WidgetDataMapper());
         
