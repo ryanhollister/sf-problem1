@@ -28,12 +28,12 @@ Derive a RewindableEntityIterator from the EntityIterator class.  Your new
 iterator should be rewindable and thus able to iterate over its elements 
 repeatedly.  To simplify the task we have used a ResultSet object instead of a 
 PDO Statement.  The EntityIterator iterates over the ResultSet object 
-directly.  Like the PDO Statemen, the ResultSet does not have the ability to rewind.
+directly.  Like the PDO Statement, the ResultSet does not have the ability to rewind.
 
 A few constraints and notes
 ---------------------------
 
-* Implement the RewindableEntityIterator class is the src directory
+* Implement the RewindableEntityIterator class in the src directory
 * Do not alter any other files in the src directory
 * There are quite a few corner cases to consider
 * There is a PHPUnit test file in the tests directory - add additional tests if it's helpful to you.
