@@ -9,7 +9,7 @@ spl_autoload_register(array(new ClassLoader(), 'load'));
 $dao = new Dao();
 
 /* Compose iterator from DAO ResultSet and Widget DataMapper */
-$itr = new EntityIterator(
+$itr = new RewindableEntityIterator(
         $dao->queryWidgets(), 
         new WidgetDataMapper());
 
